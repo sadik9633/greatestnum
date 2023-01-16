@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="w-75" style="border-width: 5px;border: solid;border-color: black;">
+        <h1 class="text-center text-dark mt-5">Greatest Number Check</h1>
+        <!-- input box-->
+        <div class="container w-50 p-3">
+            <input id="n1" type="text" placeholder="Enter Number 1" class="form-control text-center">
+            <input id="n2" type="text" placeholder="Enter Number 2" class="form-control text-center mt-3 ">
+            <div class="mt-5 text-center">
+    <button onclick="Check()" type="submit" class="btn btn-outline-primary">CHECK</button>
+            </div>
+        </div>
+    </div>
+    <!--check button-->
+    <!-- onclick is a dom event-->
+</body>
+<script>
+    
+    function Check() {
+        num1 = n1.value
+        num2 = n2.value
+        if (num1 > num2) {
+            alert(num1 + " is greater")
+        } else {
+            alert(num2 + " is greater")
+        }
+    }
+
+</script>
+</html>
